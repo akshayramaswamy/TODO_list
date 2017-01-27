@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_to_do_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.akshayramaswamy.cs193a_hw2_aramaswa.ToDoListActivity">
+
+    <TextView
+        android:text="TODO List"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:text="Click on item to remove it"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        />
+
+    <ListView
+        android:id="@+id/TODO_list"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="359dp"></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Enter an item"
+            android:ems="10"
+            android:id="@+id/newItem" ></EditText>
+
+        <Button
+            android:text="Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enterItem"
+            android:onClick="addItem"/>
+
+   </LinearLayout>
+
+</LinearLayout>
+
